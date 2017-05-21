@@ -75,10 +75,11 @@
     <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
     <script src="//cdn.bootcss.com/Base64/1.0.0/base64.min.js"></script>
 	<script>
+		
 	$(function(){
 		$('.ss_qr').each(function(i,obj){
 			$(obj).empty();
-			$(obj).qrcode({ width: 350, height: 350, text: "ss://" + btoa($(obj).attr('val'))});
+			$(obj).qrcode({ width: 350, height: 350, text: "ssr://" + btoa($(obj).attr('val'))});
 		});
 	});
 	</script>
